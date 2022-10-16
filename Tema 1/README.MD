@@ -2,7 +2,7 @@
 + Place on Tap with crosshair under the Cactus Model
 + Animator (triggers)
 + Tried to do attack trigger on Update but we're still learning unity
-+ Link to the youtube video : https://www.youtube.com/shorts/7vm_5eStH4E
++ Link to the youtube video : https://youtu.be/D8p73-kDeDE
 
  Animator
 <p align="center">
