@@ -4382,7 +4382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 2
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1555634511}
   fullRoute: []
@@ -8326,7 +8326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 3
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 170927543}
   fullRoute: []
@@ -9746,7 +9746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 2
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1555634511}
   fullRoute: []
@@ -11008,7 +11008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 3
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 170927543}
   fullRoute: []
@@ -11329,7 +11329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 2
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1555634511}
   fullRoute: []
@@ -14130,7 +14130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 2
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1555634511}
   fullRoute: []
@@ -15053,7 +15053,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613488997}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 99.3
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -16920,7 +16920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 1
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1182543354}
   fullRoute: []
@@ -17045,7 +17045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 1
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1182543354}
   fullRoute: []
@@ -17205,7 +17205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 1
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1182543354}
   fullRoute: []
@@ -20450,7 +20450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 3
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 170927543}
   fullRoute: []
@@ -20491,7 +20491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 3
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 170927543}
   fullRoute: []
@@ -21039,7 +21039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f57e7b8b41f344ab8f1b6981015ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneId: 0
+  stoneId: 1
   commonRoute: {fileID: 613132103}
   finalRoute: {fileID: 1182543354}
   fullRoute: []

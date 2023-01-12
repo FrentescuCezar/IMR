@@ -230,7 +230,7 @@ public class GameManager : MonoBehaviour
         if(moveKickStones.Count>0)
         {
             int num = Random.Range(0, moveKickStones.Count);
-            moveKickStones[num].StartTheMove(diceNumber);
+            moveKickStones[num].StartTheMove(diceNumber, false);
             state = States.WAITING;
             return;
         }
@@ -239,8 +239,9 @@ public class GameManager : MonoBehaviour
         //PERFORM MOVE IF POSSIBLE
         if (movableStones.Count > 0)
         {
+            bool isHuman = playerList[activePlayer].playerType == Entity.PlayerTypes.HUMAN;
             int num = Random.Range(0, movableStones.Count);
-            movableStones[num].StartTheMove(diceNumber);
+            movableStones[num].StartTheMove(diceNumber, isHuman);
             state = States.WAITING;
             return;
         }

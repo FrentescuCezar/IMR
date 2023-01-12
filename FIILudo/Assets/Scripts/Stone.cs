@@ -59,7 +59,7 @@ public class Stone : MonoBehaviour
         }
     }
 
-    IEnumerator Move(int diceNumber)
+    IEnumerator Move(int diceNumber, bool isHuman)
     {
         if(isMoving)
         {
@@ -74,8 +74,20 @@ public class Stone : MonoBehaviour
             Vector3 nextPos = fullRoute[routePosition].gameObject.transform.position;
             Vector3 startPos = fullRoute[routePosition - 1].gameObject.transform.position;
             //while (MoveToNextNode(nextPos, 140f)) { yield return null; }
-            while (MoveInArcToNextNode(startPos, nextPos, 8f)){ yield return null; }
-            yield return new WaitForSeconds(0.1f);
+            //while (MoveInArcToNextNode(startPos, nextPos, 8f)){ yield return null; }
+
+            Debug.Log(isHuman);
+
+            if(!isHuman) //CPU
+            {
+                while (MoveInArcToNextNode(startPos, nextPos, 8f)) { yield return null; }
+                yield return new WaitForSeconds(0.1f);
+            }
+            else
+            {
+                while (MoveInArcToNextNode(startPos, nextPos, 1000f)) { yield return null; }
+            }
+
             cTime = 0;
             steps--;
             doneSteps++;
@@ -216,10 +228,10 @@ public class Stone : MonoBehaviour
     }
 
 
-    public void StartTheMove(int diceNumber)
+    public void StartTheMove(int diceNumber, bool isHuman)
     {
         steps = diceNumber;
-        StartCoroutine(Move(diceNumber));
+        StartCoroutine(Move(diceNumber, isHuman));
     }
 
 
@@ -238,7 +250,7 @@ public class Stone : MonoBehaviour
         doneSteps = 0;
 
         Vector3 baseNodePosition = baseNode.gameObject.transform.position;
-        while (MoveToNextNode(baseNodePosition, 100f)) { yield return null; }
+        while (MoveToNextNode(baseNodePosition, 1000f)) { yield return null; }
         GameManager.instance.ReportTurnPossible(true);
     }
 
@@ -274,7 +286,7 @@ public class Stone : MonoBehaviour
             }
             else
             {
-                StartTheMove(GameManager.instance.rolledHumanDice);
+                StartTheMove(GameManager.instance.rolledHumanDice, true);
             }
             GameManager.instance.DeactivateAllSelector();
         }
