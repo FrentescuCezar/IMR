@@ -7,6 +7,8 @@ TagManager:
   - Dartboard
   - RayCastPoint
   - dart_A
+  - Right Hand
+  - Left Hand
   layers:
   - Default
   - TransparentFX

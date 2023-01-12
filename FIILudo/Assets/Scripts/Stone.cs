@@ -113,7 +113,6 @@ public class Stone : MonoBehaviour
         else
         {
             GameManager.instance.state = GameManager.States.ROLL_DICE;
-
         }
 
         isMoving = false;

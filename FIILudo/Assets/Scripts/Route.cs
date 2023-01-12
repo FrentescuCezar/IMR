@@ -7,7 +7,8 @@ public class Route : MonoBehaviour
     Transform[] childNodes;
 
     public List<Transform> childNodeList = new List<Transform>();
-
+    [SerializeField]
+    bool gizmo = false;
          
     void Start()
     {
@@ -16,18 +17,22 @@ public class Route : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        FillNodes();
-
-        for (int i = 0; i < childNodeList.Count; i++)
+        if (gizmo)
         {
-            Vector3 pos = childNodeList[i].position;
-            if(i > 0)
+            Gizmos.color = Color.green;
+            FillNodes();
+
+            for (int i = 0; i < childNodeList.Count; i++)
             {
-                Vector3 prev = childNodeList[i - 1].position;
-                Gizmos.DrawLine(prev, pos);
+                Vector3 pos = childNodeList[i].position;
+                if (i > 0)
+                {
+                    Vector3 prev = childNodeList[i - 1].position;
+                    Gizmos.DrawLine(prev, pos);
+                }
             }
         }
+        
     }
 
     void FillNodes()
