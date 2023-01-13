@@ -40,8 +40,7 @@ public class GameManager : MonoBehaviour
     bool switchingPlayer;
     bool turnPossible = true;
     //HUMANI INPUTS
-    //GAMEOBJECT FOR OUR BUTTON
-    public GameObject rollButton;
+
     [HideInInspector]public int rolledHumanDice;
 
 
@@ -309,7 +308,7 @@ public class GameManager : MonoBehaviour
 
     public void ActivateButton(bool on)
     {
-        rollButton.SetActive(on);
+        
     }
 
     public void DeactivateAllSelector()

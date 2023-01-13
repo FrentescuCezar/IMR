@@ -42,6 +42,25 @@ public class Stone : MonoBehaviour
         SetSelector(false);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown("i"))
+        {
+            if (hasTurn)
+            {
+                if (!isOut)
+                {
+                    LeaveBase();
+                }
+                else
+                {
+                    StartTheMove(GameManager.instance.rolledHumanDice, true);
+                }
+                GameManager.instance.DeactivateAllSelector();
+            }
+        }
+    }
+
     void CreateFullRoute()
     {
         for(int i = 0; i < commonRoute.childNodeList.Count; i++)
@@ -274,13 +293,12 @@ public class Stone : MonoBehaviour
         hasTurn = on;
     }
 
-   
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        if(hasTurn)
+        if (hasTurn)
         {
-            if(!isOut)
+            if (!isOut)
             {
                 LeaveBase();
             }
@@ -290,6 +308,7 @@ public class Stone : MonoBehaviour
             }
             GameManager.instance.DeactivateAllSelector();
         }
-        
     }
+
+
 }

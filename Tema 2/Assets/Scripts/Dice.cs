@@ -40,7 +40,7 @@ public class Dice : MonoBehaviour
     private void Reset()
     {
 
-        //transform.position = initPosition;
+        transform.position = initPosition;
         rb.isKinematic = false;
         thrown = false;
         hasLanded = false;
