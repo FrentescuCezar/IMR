@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/FrentescuCezar/IMR/blob/main/Screenshots/All_Logos.png" title="FIILudo Classroom">
+</p>
+
 # IMR
 UAIC, FII, Year 3, Optional - Introduction in Mixed Reality
 ## VR Game - FII Ludo
